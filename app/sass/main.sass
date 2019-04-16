@@ -1,0 +1,756 @@
+@import "../fonts/fonts.css"
+
+body
+	scroll-behavior: smooth
+	background-color: #fff
+	font-family: 'AgoraPro-Regular'
+	color: #333
+	font-size: 14px
+	line-height: 1.4
+	position: relative
+	-webkit-font-smoothing: antialiased
+*,
+*:after,
+*:before
+	transition: .3s all ease
+h1::selection, h2::selection, h3::selection, h4::selection, h5::selection, h6::selection, p::selection, a::selection, span::selection, div::selection, img::selection, mark::selection, ul::selection, li::selection
+	color            : #fff
+	background-color : #da251c
+::selection
+	color            : #fff
+	background-color : #da251c
+a, a:hover, a:active, a:focus,
+button, input, button:hover, button:active, button:focus,
+input:focus, input:active, .btn, .btn:after, select:focus, select:active
+	text-decoration: none
+	outline: none
+	transition: all 0.4s ease
+	cursor: pointer
+a
+	color: #da251c
+	&:hover
+		color: #da251c
+button
+	border: transparent
+	background: none
+option
+	color: #fff
+textarea
+	resize:none
+input,
+textarea,
+select
+	color: #000
+	font-family: 'AgoraPro-MediumItalic';
+	font-size: 14px
+	padding: 12px 15px
+	background: none
+	border-radius: 6px
+	border: 1px solid #ccc
+input[type="text"]::placeholder,
+input[type="email"]::placeholder,
+input[type="tel"]::placeholder
+	color: #000
+input:focus,
+textarea:focus,
+input:active,
+textarea:active
+	background: none
+	color: #000
+	border-color: #da251c
+	outline: none
+.shd
+	box-shadow: 0px 12px 28px -13px rgba(0,0,0,0.64)
+button:active
+	box-shadow: unset
+.shd:hover
+	box-shadow: 0px 16px 32px -9px rgba(0,0,0,0.69)
+.und
+	text-decoration: underline
+.upp
+	text-transform: uppercase
+.btn
+	outline: none
+	font-size: 14px
+	font-family: 'AgoraPro-Bold'
+	text-transform: uppercase
+	text-align: center
+	padding: 15px 25px
+	padding-left: 40px
+	color: #fff
+	background-color: #da251c
+	position: relative
+	display: block
+	max-width: 210px
+	height: 50px
+	border-radius: 4px
+	&::before
+		content: ''
+		position: absolute
+		width: 15px
+		height: 15px
+		left: 20px
+		top: 17px
+		background-position: 50% 50%
+		background-size: contain
+		background-repeat: no-repeat
+		background-image: url(../img/icon__btn.png)
+	&::after
+		content: ''
+		position: absolute
+		width: 22px
+		height: 50px
+		top: 0
+		right: -7px
+		border-top-right-radius: 6px
+		border-bottom-right-radius: 6px
+		transform: skew(-17deg)
+		background-color: #da251c
+	&:hover
+		color: #fff
+		opacity: .7
+	&_black
+		background-color: #fff
+		color: #000
+		border: 1px solid #000
+		&::before
+			background-image: url(../img/icon__btn_black.png)
+		&::after
+			height: 49.5px
+			top: -1px
+			width: 32px
+			right: -17px
+			border: 1px solid #000
+			background-color: #fff
+			border-left-color: #fff
+		&:hover
+			color: #000
+	&_cart
+		&::before
+			background-image: url(../img/icon__cart_white.png)
+.tabs
+	&__list
+		list-style-type: none
+		li
+			cursor: pointer
+	&-content__item
+		transition: unset !important
+.list_circle
+	list-style-type: none
+	padding-left: 0
+	li
+		padding-left: 25px
+		position: relative
+		&
+			margin-bottom: 10px
+		&::before
+			content: ''
+			position: absolute
+			width: 8px
+			height: 8px
+			background-color: #EE414F
+			left: 0
+			top: 8px
+			border-radius: 50%
+.popup__container
+	padding: 40px
+	background-color: transparent
+	.fancybox-close-small
+		top: 30px
+		right: 30px
+		color: #fff
+		background-color: #da251c
+		opacity: 1
+		border-radius: 50%
+		&:hover
+			transform: rotate(360deg)
+	.popup__wrp
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		-webkit-flex-wrap: wrap
+		-moz-flex-wrap: wrap
+		-ms-flex-wrap: wrap
+		-o-flex-wrap: wrap
+		flex-wrap: wrap
+		-ms-align-items: center
+		align-items: center
+		justify-content: center
+		position: relative
+		&::after
+			content: ''
+			position: absolute
+			width: 91%
+			height: 6px
+			bottom: -6px
+			left: 50%
+			margin-left: -46%
+			background-position: 50% 50%
+			background-repeat: repeat
+			-webkit-background-size: contain
+			background-size: contain
+			background-image: url(../img/gradient_2.jpg)
+			-webkit-border-bottom-left-radius: 16px
+			border-bottom-left-radius: 16px
+			-webkit-border-bottom-right-radius: 16px
+			border-bottom-right-radius: 16px
+	.popup_call__wrp
+		max-width: 320px
+		.popup
+			width: 100%
+			height: 100%
+			position: relative
+			z-index: 2
+			display: -webkit-flex
+			display: -moz-flex
+			display: -ms-flex
+			display: -o-flex
+			display: flex
+			-webkit-flex-direction: column
+			-moz-flex-direction: column
+			-ms-flex-direction: column
+			-o-flex-direction: column
+			flex-direction: column
+			-ms-align-items: center
+			align-items: center
+			justify-content: flex-start
+			background-color: #fff
+			border-radius: 16px
+			color: #000
+			padding: 30px 25px 30px
+			text-align: center
+			&__ttl
+				font-family: 'AgoraPro-Black'
+				font-size: 26px
+				margin-bottom: 15px
+			.form__input
+				color: #000
+			input.form__input::placeholder
+				color: #000
+			.btn
+				padding-left: 25px
+				margin-bottom: 10px
+			&__policy
+				max-width: 230px
+				text-align: center
+				font-size: 12px
+				line-height: 1.2
+				a
+					font-size: 12px 
+					color: #da251c
+	.questions__popup-wrp
+		max-width: 560px
+		&::after
+			width: 96%
+			margin-left: -48%
+		.questions__popup
+			width: 100%
+			height: 100%
+			position: relative
+			z-index: 2
+			display: -webkit-flex
+			display: -moz-flex
+			display: -ms-flex
+			display: -o-flex
+			display: flex
+			-webkit-flex-direction: column
+			-moz-flex-direction: column
+			-ms-flex-direction: column
+			-o-flex-direction: column
+			flex-direction: column
+			-ms-align-items: center
+			align-items: center
+			justify-content: flex-start
+			background-color: #fff
+			border-radius: 16px
+			color: #000
+			padding: 30px 25px 30px
+			text-align: center
+			&-ttl
+				font-family: 'AgoraPro-Black'
+				font-size: 26px
+				margin-bottom: 15px
+.owl-carousel
+	.owl-dots
+		position: absolute
+		width: 100%
+		display: flex
+		justify-content: center
+		bottom: 0
+		button.owl-dot
+			width: 15px
+			height: 15px
+			border: 1px solid #333
+			background-color: transparent
+			position: relative
+			transform: scale(1)
+			&:not(:last-child)
+				margin-right: 13px
+			&.active
+				transform: scale(0.9)
+				border-color: transparent
+				background-color: #da251c
+	.owl-nav
+		button.owl-prev,
+		button.owl-next
+			position: absolute
+			bottom: 50%
+			margin-bottom: -28.5px
+			filter: grayscale(100%)
+		button.owl-prev:hover,
+		button.owl-next:hover
+			filter: grayscale(0%)
+		button.owl-prev.disabled,
+		button.owl-next.disabled,
+		button.owl-prev.disabled:hover,
+		button.owl-next.disabled:hover
+			opacity: .3
+			filter: grayscale(100%)
+			cursor: default
+		button.owl-prev
+			left: -70px
+		button.owl-next
+			right: -70px
+.section_inner
+	padding: 60px 0
+.section__ttl
+	font-size: 40px
+	font-family: 'AgoraPro-Black'
+	margin-bottom: 25px
+	text-align: center
+.input__wrp
+	position: relative
+	max-width: 230px
+	input,
+	select
+		width: 100%
+		// padding-left: 35px
+	// &::before
+	// 	content: ''
+	// 	position: absolute
+	// 	left: 10px
+	// 	top: 8px
+	// 	width: 12px
+	// 	height: 17px
+	// 	background-position: 50% 50%
+	// 	background-size: contain
+	// 	background-repeat: no-repeat
+	// &_name:before
+	// 	background-image: url(../img/icon__form-name.png)
+	// &_mail:before
+	// 	background-image: url(../img/icon__form-mes.png)
+	// 	top: 8px
+	// &_tel:before
+	// 	background-image: url(../img/icon__form-tel.png)
+	// 	top: 8px
+	&:not(:last-child)
+		margin-bottom: 10px
+.banner
+	background-position: 50% 50%
+	background-size: cover
+	background-repeat: no-repeat
+	
+.header
+	padding: 30px 0
+	&__logo
+		&:hover
+			transform: scale(.9)
+			opacity: .9
+	&__menu
+		max-width: 240px
+		margin-bottom: -10px
+		&-item
+			font-family: 'AgoraPro-Bold'
+			text-decoration: underline
+			text-transform: uppercase
+			color: #000
+			margin-bottom: 10px
+			display: block
+	&__contacts
+		&-ttl
+			font-size: 16px
+			font-family: 'AgoraPro-Bold'
+			margin-bottom: 10px
+			color: #000
+		&-list
+			font-family: 'AgoraPro-Italic'
+		&-item
+			padding-left: 35px
+			position: relative
+			&::before
+				content: ''
+				position: absolute
+				width: 24px
+				height: 24px
+				left: 0
+				top: 3px
+				background-position: 50% 50%
+				background-repeat: no-repeat
+				background-size: contain
+			&_geo
+				&::before
+					background-image: url(../img/icon__geo.png)
+			&_tel
+				&::before
+					background-image: url(../img/icon__tel.png)
+				.header__contacts-ttl
+					font-size: 22px
+			&_cart
+				&::before
+					background-image: url(../img/icon__cart.png)
+	&__btn
+		padding-left: 25px
+		&::before
+			display: none
+.offer
+	padding: 50px 0 0
+	&__ttl
+		font-size: 40px
+		margin-bottom: 25px
+	&__img
+		background: url(../img/banner__img.png) no-repeat 50% 50% / contain
+		width: 569px
+		height: 489px
+		margin-bottom: -20px
+.quick-info
+	&__descr
+		text-align: center
+		font-size: 16px
+.article
+	padding-bottom: 30px
+	background-color: #faf6f2
+	position: relative
+	&::after
+		content: ''
+		position: absolute
+		width: 100%
+		height: 30px
+		bottom: 0
+		background-position: 50% 50%
+		background-repeat: repeat
+		background-size: contain
+		background-image: url(../img/gradient.jpg)
+	&__img
+		background: url(../img/article__img.png) no-repeat 50% 50% / contain
+		width: 369px
+		height: 379px
+		position: absolute
+		bottom: 0
+	&__in
+		margin-bottom: 40px
+	&__ttl
+		font-size: 26px
+		font-family: 'AgoraPro-Black'
+		margin-bottom: 20px
+	&__text
+		transition: unset !important
+	&__btn
+		margin-top: 15px
+.choice
+	.tabs
+		&__list
+			margin-bottom: 30px
+			display: flex
+			flex-wrap: wrap
+			justify-content: center
+			li
+				text-align: center
+				font-size: 16px
+				font-family: 'AgoraPro-Black'
+				text-transform: uppercase
+				width: 260px
+				padding: 12px 25px
+				border: 1px solid #333
+				&:nth-child(1)
+					border-top-left-radius: 4px
+					border-bottom-left-radius: 4px
+				&:nth-child(2)
+					border-top-right-radius: 4px
+					border-bottom-right-radius: 4px
+				&.active
+					border-color: #da251c
+					background-color: #da251c
+					color: #fff
+		&__container
+			padding-bottom: 30px
+			margin-bottom: 37px
+			border-bottom: 1px solid #ccc
+			background: url(../img/choice__bg.png) no-repeat 50% 50% / 100%
+	&__item
+		display: flex
+		flex-direction: column
+		align-items: center
+		&-img
+			width: 100%
+			max-width: 270px
+			height: 230px
+			margin-left: auto
+			margin-right: auto
+			background-position: 50% 50%
+			background-repeat: no-repeat
+			background-size: contain
+			margin-bottom: 15px
+		&-ttl
+			text-align: center
+			font-family: 'AgoraPro-Bold'
+			text-transform: uppercase
+			margin-bottom: 17px
+			max-width: 200px
+	&-add
+		padding-top: 0
+		&__item
+			border: 1px solid #ccc
+			border-radius: 16px
+			position: relative
+			display: none
+			transition: unset
+			&.active
+				display: block
+			&::after
+				content: ''
+				position: absolute
+				width: 98%
+				height: 6px
+				bottom: -6px
+				left: 50%
+				margin-left: -49%
+				background-position: 50% 50%
+				background-repeat: repeat
+				background-size: contain
+				background-image: url(../img/gradient_2.jpg)
+				border-bottom-left-radius: 16px
+				border-bottom-right-radius: 16px
+		&__img
+			width: 100%
+			height: 100%
+			background-position: 50% 50%
+			background-repeat: no-repeat
+			background-size: cover
+			border-top-left-radius: 16px
+			border-bottom-left-radius: 16px
+		&__info
+			padding: 25px 50px 25px 0
+			.btn
+				transform: scale(.9)
+		&__ttl
+			font-family: 'AgoraPro-Bold'
+			font-size: 20px
+			text-transform: uppercase
+			margin-bottom: 15px
+		&__test
+			display: flex
+			&-item
+				display: flex
+				align-items: center
+				width: 180px
+				font-size: 12px
+				color: #da251c
+				text-transform: uppercase
+				font-family: 'AgoraPro-Bold'
+				&__img
+					width: 30px
+					height: 30px
+					margin-right: 10px
+					background-position: 50% 50%
+					background-repeat: no-repeat
+					background-size: contain
+				&__ttl
+					width: 150px
+				&:not(:last-child)
+					margin-right: 20px
+		&__price
+			text-transform: uppercase
+			color: #000
+			font-family: 'AgoraPro-Black'
+			font-size: 22px
+.stages
+	&__item
+		display: flex
+		flex-direction: column
+		align-items: center
+		margin-bottom: 35px
+		&-img
+			width: 100%
+			max-width: 100px
+			height: 80px
+			margin-left: auto
+			margin-right: auto
+			background-position: 50% 50%
+			background-repeat: no-repeat
+			background-size: contain
+			margin-bottom: 15px
+		&-ttl
+			text-align: center
+			max-width: 270px
+		&:hover
+			.stages__item-img
+				transform: scale(1.05)
+			.stages__item-ttl
+				transform: translateY(-5px)
+.energy
+	padding-bottom: 80px
+	background-position: 50% 50%
+	background-repeat: repeat
+	background-size: cover
+	background-image: url(../img/energy__bg.jpg)
+	position: relative
+	color: #000
+	&::after
+		content: ''
+		position: absolute
+		width: 100%
+		height: 30px
+		bottom: 0
+		background-position: 50% 50%
+		background-repeat: repeat
+		background-size: contain
+		background-image: url(../img/gradient.jpg)
+	&__ttl
+		font-family: 'AgoraPro-Black', sans-serif
+		font-size: 22px
+		margin-bottom: 30px
+		text-align: center
+	.section__ttl
+		font-size: 34px
+	&__bot
+		max-width: 420px
+		margin-left: auto
+		margin-right: auto
+		margin-top: -30px
+	&__item
+		font-size: 13px
+		width: 150px
+		height: 170px
+		text-align: center
+		display: flex
+		align-items: center
+		padding-left: 10px
+		padding-right: 10px
+		background: url(../img/energy__polygon.png) no-repeat 50% 50% / contain
+		&:nth-child(1)
+			transform: translateX(70px)
+		&:nth-child(2)
+			transform: translateY(135px)
+		&:nth-child(3)
+			transform: translateX(-70px)
+		// &:hover
+		// 	opacity: .9
+.questions
+	&__item
+		position: relative
+		min-height: 250px
+		max-width: 250px
+		display: block
+		margin-left: auto
+		margin-right: auto
+		border-radius: 16px
+		padding: 20px
+		background-position: 50% 50%
+		background-repeat: repeat
+		background-size: cover
+		overflow: hidden
+		&::before
+			content: ''
+			position: absolute
+			width: 100%
+			height: 100%
+			left: 0
+			top: 0
+			background-color: #000
+			opacity: .7
+		&-ttl
+			position: relative
+			color: #fff
+			font-family: 'AgoraPro-Bold'
+			font-size: 18px
+		&:hover
+			&::before
+				background-color: #da251c
+.reviews
+	background-color: #faf6f2
+	color: #000
+	&__slider
+		max-width: 670px
+		margin-left: auto
+		margin-right: auto
+	&__item
+		background-color: #fff
+		border-radius: 6px
+		padding: 30px 40px
+		&-ttl
+			font-family: 'AgoraPro-Bold'
+			text-transform: uppercase
+		&-pos
+			font-size: 12px
+			color: #da251c
+			text-transform: uppercase
+		&-descr
+			margin-top: 10px
+.footer
+	padding: 70px 0 30px
+	position: relative
+	&::before
+		content: ''
+		position: absolute
+		width: 100%
+		height: 30px
+		top: 0
+		background-position: 50% 50%
+		background-repeat: repeat
+		background-size: contain
+		background-image: url(../img/gradient.jpg)
+	&__logo
+		&:hover
+			transform: scale(.9)
+			opacity: .9
+	&__menu
+		max-width: 240px
+		margin-bottom: -10px
+		&-item
+			font-family: 'AgoraPro-Bold'
+			text-decoration: underline
+			text-transform: uppercase
+			color: #000
+			margin-bottom: 10px
+			display: block
+	&__contacts
+		&-ttl
+			font-size: 16px
+			font-family: 'AgoraPro-Bold'
+			margin-bottom: 10px
+			color: #000
+		&-list
+			font-family: 'AgoraPro-Italic'
+		&-item
+			padding-left: 35px
+			position: relative
+			&::before
+				content: ''
+				position: absolute
+				width: 24px
+				height: 24px
+				left: 0
+				top: 3px
+				background-position: 50% 50%
+				background-repeat: no-repeat
+				background-size: contain
+			&_geo
+				&::before
+					background-image: url(../img/icon__geo.png)
+			&_tel
+				&::before
+					background-image: url(../img/icon__tel.png)
+				.footer__contacts-ttl
+					font-size: 22px
+			&_cart
+				&::before
+					background-image: url(../img/icon__cart.png)
+	&__socials
+		max-width: 190px
+		a
+			display: flex
+			&:hover
+				opacity: .7
+@import "media"
