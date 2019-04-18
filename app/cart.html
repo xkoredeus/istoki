@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1 user-scalable=0">
+	<meta name="theme-color" content="#da251c">
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+	<title>New Project</title>
+	<link rel="stylesheet" href="css/libs.min.css">
+	<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+	<section class="banner" style="background-image: url(img/banner__bg.jpg); background-position: 0 50%">
+		<header class="header">
+			<div class="container">
+				<div class="header__in d-flex justify-content-between align-items-center">
+					<a href="#" class="d-flex align-items-center header__logo">
+						<img src="img/header__logo.png" alt="header__logo.png">
+					</a>
+					<div class="header__menu">
+						<div class="row">
+							<div class="col-sm-4">
+								<a href="#" class="header__menu-item">О нас</a>
+							</div>
+							<div class="col-sm-8">
+								<a href="#" class="header__menu-item">Меню и тарифы</a>
+							</div>
+							<div class="col-sm-4">
+								<a href="#" class="header__menu-item">Доставка</a>
+							</div>
+							<div class="col-sm-8">
+								<a href="#" class="header__menu-item">Как это работает</a>
+							</div>
+						</div>
+					</div>
+					<div class="header__contacts-item header__contacts-item_geo d-flex flex-column mb-auto">
+						<div class="header__contacts-ttl">Самара<br>ул. Пролетарская, 60/3</div>
+						<div class="header__contacts-list">Пн-Пт: 9:00 до 20:00</div>
+						<div class="header__contacts-list">Сб-Вс: 10:00 до 18:00</div>
+					</div>
+					<div class="header__contacts-item header__contacts-item_tel d-flex flex-column mb-auto">
+						<a href="tel:78002002222" class="header__contacts-ttl">8 (800) 200-22-22</a>
+						<a href="#popup_call" data-fancybox class="header__btn btn">Заказать звонок</a>
+					</div>
+					<div class="header__contacts-item header__contacts-item_cart d-flex flex-column mb-auto">
+						<a href="#" class="header__contacts-ttl">Корзина</a>
+						<div class="header__contacts-list">12 товаров</div>
+						<a href="#" class="header__contacts-list und">Оформить</a>
+					</div>
+				</div>
+			</div>
+		</header>
+	</section>
+	<div class="cart__in">
+		<div class="container">
+			<div class="navigation d-flex justify-content-between align-items-center">
+				<ul class="crumbs">
+					<li><a href="#">Главная</a></li>
+					<li>Корзина</li>
+				</ul>
+				<a href="#" class="btn btn_back">Вернуться назад</a>
+			</div>
+		</div>
+		<div class="cart__top">
+			<div class="container">
+				<h3 class="section__ttl">В корзине</h3>
+				<div class="cart__goods mb-5">
+					<div class="cart__goods-top">
+						<div class="row aling-items-center pt-2 pb-2">
+							<div class="offset-sm-2"></div>
+							<div class="col-sm-3">Наименование</div>
+							<div class="col-sm-2 text-center">Цена</div>
+							<div class="col-sm-2 text-center">Количество</div>
+							<div class="col-sm-2 text-center">Сумма</div>
+							<div class="offset-sm-1"></div>
+						</div>
+					</div>
+					<div class="cart__goods-cnt">
+						<div class="row align-items-center cart__goods-item">
+							<div class="col-sm-2 p-2">
+								<img src="img/cart__img.png" alt="img/cart__img.png" class="img-fluid">
+							</div>
+							<div class="col-sm-3 p-2">
+								<div class="cart__goods-item-ttl">Мясное рагу с картофелем</div>
+								<div class="cart__goods-item-info">Состав: мясо, картофель, соль</div>
+								<div class="cart__goods-item-info">Вес: 700 г</div>
+							</div>
+							<div class="col-sm-2 p-2">1000 руб.</div>
+							<div class="col-sm-2 p-2">
+								<div class="input__wrp input__wrp_num">
+									<input type="number" min="1" value="1" class="input__wrp_num-value">
+									<button class="input__wrp_num-plus"></button>
+									<button class="input__wrp_num-minus"></button>
+								</div>
+							</div>
+							<div class="col-sm-2 p-2">2000 руб.</div>
+							<div class="col-sm-1 p-2">
+								<input type="delete" class="input__wrp_delete">
+							</div>
+						</div>
+						<div class="row align-items-center cart__goods-item">
+							<div class="col-sm-2 p-2">
+								<img src="img/cart__img.png" alt="img/cart__img.png" class="img-fluid">
+							</div>
+							<div class="col-sm-3 p-2">
+								<div class="cart__goods-item-ttl">Мясное рагу с картофелем</div>
+								<div class="cart__goods-item-info">Состав: мясо, картофель, соль</div>
+								<div class="cart__goods-item-info">Вес: 700 г</div>
+							</div>
+							<div class="col-sm-2 p-2">1000 руб.</div>
+							<div class="col-sm-2 p-2">
+								<div class="input__wrp input__wrp_num">
+									<input type="number" min="1" value="1" class="input__wrp_num-value">
+									<button class="input__wrp_num-plus"></button>
+									<button class="input__wrp_num-minus"></button>
+								</div>
+							</div>
+							<div class="col-sm-2 p-2">2000 руб.</div>
+							<div class="col-sm-1 p-2">
+								<input type="delete" class="input__wrp_delete">
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="cart__goods-total d-flex flex-column align-items-end">
+					<div class="cart__goods-total-ttl">Всего 2 товара на сумму: <b>3000 руб.</b></div>
+					<div>Сумма указана без учета доставки.</div>
+					<div>Окончательная сумма будет рассчитана на этапе оформления</div>
+				</div>
+			</div>
+		</div>
+		<section class="section_inner cart__details">
+			<div class="container">
+				<div class="row">
+					<div class="col-xl-4 col-sm-6">
+						<h3 class="section__ttl">Оформить заказ</h3>
+						<a href="tel:88002002222" class="cart__details-tel d-block mb-4">
+							<div>По телефону</div>
+							<div>8 (800) 200-22-22</div>
+						</a>
+						<div><b>Через форму обратной связи</b></div>
+						<p>Менеджер позвонит в течение 15 мин</p>
+						<div class="input__wrp">
+							<input type="text" class="form__input" name="cart__name" placeholder="Ваше имя*" required="">
+						</div>
+						<div class="input__wrp">
+							<input type="tel" class="form__input" name="cart__tel" placeholder="Ваш номер телефона*" required="">
+						</div>
+						<div class="input__wrp">
+							<input type="email" class="form__input" name="cart__email" placeholder="Ваш e-mail">
+						</div>
+					</div>
+					<div class="col-xl-4 col-sm-6">
+						<h3 class="section__ttl">Когда?</h3>
+						<div class="input__wrp input__wrp_date">
+							<input type="date" class="form__input" name="cart__date" placeholder="Выберите дату">
+						</div>
+						<div>доставка возможна только на следующий день</div>
+						<div class="cart__details-subttl">Уточните время</div>
+						<label for="cart__checkbox_1" class="checkbox cart__details-checkbox">
+							<input type="radio" id="cart__checkbox_1" name="cart__delivery_1">
+							<span class="checkbox__text">
+								Доставка с 10:00 до 13:00
+							</span>
+						</label>
+						<label for="cart__checkbox_2" class="checkbox cart__details-checkbox">
+							<input type="radio" id="cart__checkbox_2" name="cart__delivery_1">
+							<span class="checkbox__text">
+								Доставка с 13:00 до 18:00
+							</span>
+						</label>
+						<label for="cart__checkbox_3" class="checkbox cart__details-checkbox">
+							<input type="radio" id="cart__checkbox_3" name="cart__delivery_1">
+							<span class="checkbox__text">
+								Доставка с 18:00 до 21:00
+							</span>
+						</label>
+					</div>
+					<div class="col-xl-4 col-sm-6">
+						<h3 class="section__ttl">Куда?</h3>
+						<label for="cart__checkbox_4" class="checkbox cart__details-checkbox">
+							<input type="radio" id="cart__checkbox_4" name="cart__delivery_2">
+							<span class="checkbox__text">
+								Курьерская доставка по Самаре (от ст.метро Безымянка до Куйбышевского района) бесплатно
+							</span>
+						</label>
+						<label for="cart__checkbox_5" class="checkbox cart__details-checkbox">
+							<input type="radio" id="cart__checkbox_5" name="cart__delivery_2">
+							<span class="checkbox__text">
+								Курьерская доставка в п. Мехзавод, Московское шоссе 24км, Кошелев, Крутые ключи, п. Управленческий, Красная глинка, Южный город, Сухая Самарка, 116 км, п. Смышляевка, п. Стройкерамика, Горелый хутор, Волгарь (+300 рублей) 
+							</span>
+						</label>
+						<div class="cart__details-info">
+							Если вы не нашли ваш район, свяжитесь с нами по возможности доставки
+							<a href="tel:88002002222" class="d-block">+7 (800) 200-22-22</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</div>
+	<section class="cart__map" style="background: url(img/cart__map.jpg) no-repeat 50% 50% / cover"></section>
+	<section class="cart__pay section_inner">
+		<div class="container">
+			<h3 class="section__ttl">Как оплатить?</h3>
+			<div class="cart__pay-amount">Итого: <span>3000 руб.</span></div>
+			<div class="d-flex flex-wrap mb-3">
+				<label for="cart__checkbox_6" class="checkbox cart__pay-checkbox">
+					<input type="radio" id="cart__checkbox_6" name="cart__pay_1">
+					<span class="checkbox__text">
+						Наличными при поступлении заказа
+					</span>
+				</label>
+				<label for="cart__checkbox_7" class="checkbox cart__pay-checkbox">
+					<input type="radio" id="cart__checkbox_7" name="cart__pay_1">
+					<span class="checkbox__text">
+						На карту при поступлении заказа
+					</span>
+				</label>
+			</div>
+			<p><b>Для корпоративных клиентов возможен безналичный расчет</b></p>
+			<input type="submit" class="btn mt-4" value="Отправить заявку">
+		</div>
+	</section>
+	<footer class="footer">
+		<div class="container">
+			<div class="footer__in d-flex justify-content-between align-items-center">
+				<a href="#" class="d-flex align-items-center footer__logo">
+					<img src="img/header__logo.png" alt="header__logo.png">
+				</a>
+				<div class="footer__contacts-item footer__contacts-item_geo d-flex flex-column mb-auto">
+					<div class="footer__contacts-ttl">Самара</div>
+					<div class="footer__contacts-list">ул. Пролетарская, 60/3</div>
+				</div>
+				<div class="footer__contacts-item footer__contacts-item_tel d-flex flex-column mb-auto">
+					<a href="tel:78002002222" class="footer__contacts-ttl">8 (800) 200-22-22</a>
+					<div class="footer__contacts-list">Пн-Пт: 9:00 до 20:00</div>
+					<div class="footer__contacts-list">Сб-Вс: 10:00 до 18:00</div>
+				</div>
+				<div class="footer__contacts-item footer__contacts-item_cart d-flex flex-column mb-auto">
+					<a href="#" class="footer__contacts-ttl">Корзина</a>
+					<div class="footer__contacts-list">12 товаров</div>
+					<a href="#" class="footer__contacts-list und">Оформить</a>
+				</div>
+				<div class="footer__socials">
+					<div class="row">
+						<div class="col-6 col-sm-3 mb-2">
+							<a href="#" target="_blank"><img src="img/icon__vk.png" alt="icon__vk.png" class="img-fluid"></a>
+						</div>
+						<div class="col-6 col-sm-3 mb-2">
+							<a href="#" target="_blank"><img src="img/icon__fb.png" alt="icon__fb.png" class="img-fluid"></a>
+						</div>
+						<div class="col-6 col-sm-3 mb-2">
+							<a href="#" target="_blank"><img src="img/icon__tw.png" alt="icon__tw.png" class="img-fluid"></a>
+						</div>
+						<div class="col-6 col-sm-3 mb-2">
+							<a href="#" target="_blank"><img src="img/icon__ok.png" alt="icon__ok.png" class="img-fluid"></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<div id="popup_call" class="popup__container" style="display:none">
+		<div  class="popup__wrp popup_call__wrp">
+			<form action="[[~[[*id]]]]" method="post" class="popup">
+				<h3 class="popup__ttl">Заказать звонок</h3>
+				<div class="input__wrp">
+					<input type="text" class="form__input" name="popup_call__name" placeholder="Ваше имя*" required="">
+				</div>
+				<div class="input__wrp">
+					<input type="tel" class="form__input" name="popup_call__tel" placeholder="Ваш номер телефона*" required="">
+				</div>
+				<div class="input__wrp">
+					<input type="email" class="form__input" name="popup_call__email" placeholder="Ваш e-mail">
+				</div>
+				<input type="submit" class="btn" name="popup_call__sumbit" value="Заказать">
+				<div class="popup__policy">
+					Нажимая кнопку "Заказать", вы соглашаетесь с <a href="#" class="form__policy-link">политикой конфиденциальности</a>
+				</div>
+			</form>
+		</div>
+	</div>
+	<script src="js/libs.min.js"></script>
+	<script src="js/scripts.js"></script>
+</body>
+</html>

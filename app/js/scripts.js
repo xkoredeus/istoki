@@ -63,7 +63,24 @@ $(function() {
     $('.choice-add__item.active').slideToggle().removeClass('active');
     $('.choice-add__item[data-choice="'+choice+'"]').slideToggle().addClass('active');
   });
+  //stylization input type number
+  $( '.cart__item-quantity' ).on( 'click', '.cart__item-quantity-minus, .cart__item-quantity-plus', function () {
+  var input = $( this ).siblings( '.cart__item-quantity-num' );
+    if ( (input.val() > 1) && ($( this ).hasClass( 'cart__item-quantity-minus' ) ) ) {
+        input.val( +input.val() - 1 );
+    } else if ( $( this ).hasClass( 'cart__item-quantity-plus' ) ) {
+      input.val( +input.val() + 1 );
+    };
+  });
 
+  $( '.input__wrp_num' ).on( 'click', '.input__wrp_num-minus, .input__wrp_num-plus', function () {
+  var input = $( this ).siblings( '.input__wrp_num-value' );
+    if ( (input.val() > 1) && ($( this ).hasClass( 'input__wrp_num-minus' ) ) ) {
+        input.val( +input.val() - 1 );
+    } else if ( $( this ).hasClass( 'input__wrp_num-plus' ) ) {
+      input.val( +input.val() + 1 );
+    };
+  });
   
   
 
